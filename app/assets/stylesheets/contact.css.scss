@@ -1,0 +1,135 @@
+.contact-send {
+  width: 210px;
+  padding: 40px 0;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  font-family: 'Gotham';
+  font-size: 18px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  display: block;
+  color: black;
+  z-index: 2;
+  background-color: white;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+form {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  z-index: 0;
+
+  input:focus, input:active, textarea:focus, textarea:active {
+    outline: none !important;
+  }
+
+  input, textarea {
+    font-size: 44px;
+    font-family: 'Gotham';
+    text-transform: uppercase;
+    border: 0px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .name {
+    margin-top: 0px;
+  }
+
+  textarea {
+    height: calc(100% - 290px);
+    resize: none;
+  }
+}
+
+.contact-nav {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  z-index: 1;
+  display: block;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-nav {
+    position: fixed;
+    height: 60px;
+    width: 60px;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .contact-send {
+    position: fixed;
+    width: 150px;
+    padding: 30px 0;
+    bottom: 0px;
+    right: 0px;
+
+    &:active {
+      background-color: black;
+      color: white;
+    }
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  form {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    botom: 20px;
+
+    input, textarea {
+      font-size: 20px;
+      margin-top: 25px;
+    }
+
+    .name {
+      width: calc(100% - 60px);
+    }
+
+    textarea {
+      height: calc(100% - 150px);
+      resize: none;
+    }
+  }
+}

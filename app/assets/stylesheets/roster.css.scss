@@ -1,0 +1,148 @@
+.names {
+  height: 140px;
+  background-color: #111;
+  position: relative;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+
+    a {
+      display: inline-block;
+      margin-left: 30px;
+      font-family: 'Gotham';
+      color: #4D4D4D;
+      float: left;
+      text-transform: uppercase;
+      font-size: 11px;
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.player {
+  position: relative;
+  margin-bottom: 45px;
+
+  .info {
+    width: 34%;
+    float: left;
+    text-align: left;
+
+    .propic {
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      display: block;
+      margin: 40px 0px 30px 40px;
+    }
+
+    .name {
+      font-family: 'Gotham';
+      font-size: 14pt;
+      text-transform: uppercase;
+      margin-left: 40px;
+    }
+
+    .city {
+      font-family: 'Gotham';
+      font-size: 8pt;
+      text-transform: uppercase;
+      margin-left: 40px;
+    }
+
+    .details {
+      margin-left: 40px;
+      margin-top: 25px;
+      line-height: 2.0em;
+    }
+
+    p {
+      font-size: 7pt;
+      font-family: 'Grotesk'
+    }
+
+    h1 {
+      font-size: 8pt;
+      text-transform: uppercase;
+      font-family: 'Gotham'
+    }
+
+    .block {
+      color: black;
+      border-color: black;
+      text-align: center;
+      margin-left: 40px;
+      bottom: 0px;
+      position: absolute;
+    }
+  }
+
+  .images {
+    width: 66%;
+    float: left;
+
+    img {
+      width: 50%;
+      height: auto;
+      display: block;
+      float: left;
+    }
+  }
+}
+
+.contact-roster {
+  background-color: #111;
+
+  .tag {
+    color: white;
+    padding-top: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .names {
+    height: 160px;
+
+    div {
+      left: -5px;
+
+      a {
+        clear: both;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .player {
+    margin-top: 45px;
+    margin-bottom: 0px;
+
+    .info {
+      width: 100%;
+      float: none;
+
+      .block {
+        position: relative;
+      }
+    }
+
+    .images {
+      width: 100%;
+      float: none;
+      margin-top: 20px;
+    }
+  }
+
+  .contact-roster {
+    .tag {
+      padding-top: 30px;
+    }
+  }
+}

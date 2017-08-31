@@ -1,0 +1,124 @@
+<script type="text/javascript">
+//    google.maps.event.addDomListener(window, 'load', init);
+//    google.maps.event.addDomListener(window, 'page:load', init)
+//
+//    function init() {
+//        var mapOptions = {
+//            zoom: 15,
+//            scrollwheel: false,
+//            center: new google.maps.LatLng(33.755699, -84.366367),
+//            zoomControl: false,
+//            mapTypeControl: false,
+//            streetViewControl: false,
+//            // style: lunar landscape
+//            styles: [
+//                {
+//                    "featureType": "all",
+//                    "elementType": "all",
+//                    "stylers": [
+//                        {
+//                            "invert_lightness": true
+//                        },
+//                        {
+//                            "hue": "#ff1a00"
+//                        },
+//                        {
+//                            "saturation": -100
+//                        },
+//                        {
+//                            "lightness": 33
+//                        },
+//                        {
+//                            "gamma": 0.5
+//                        }
+//                    ]
+//                },
+//                {
+//                    "featureType": "water",
+//                    "elementType": "geometry",
+//                    "stylers": [
+//                        {
+//                            "color": "#2D333C"
+//                        }
+//                    ]
+//                }
+//            ]
+//        };
+//
+//        var mapElement = document.getElementById("map");
+//
+//        var map = new google.maps.Map(mapElement, mapOptions);
+//
+//        var marker = new google.maps.Marker({
+//            position: new google.maps.LatLng(33.755699, -84.366367),
+//            map: map,
+//            title: 'Allies',
+//            icon: '<%= asset_path 'arrows/marker2.png' %>'
+//        });
+//    }
+</script>
+<div class="top" id="top">
+  <div class="dominant">
+    <div class="left">
+      <video autoplay loop>
+        <source src="<%= asset_path 'home/queen.mp4' %>" type="video/mp4">
+        <source src="<%= asset_path 'home/queen.webm' %>" type="video/webm">
+        <%= image_tag("dominants/HomeDominant.jpg") %>
+      </video>
+    </div>
+    <div class="right">
+      <video autoplay loop>
+        <source src="<%= asset_path 'home/freddie.mp4' %>" type="video/mp4">
+        <source src="<%= asset_path 'home/freddie.webm' %>" type="video/webm">
+        <%= image_tag("dominants/HomeDominant.jpg") %>
+      </video>
+    </div>
+    <div class="mobile" style="background-image: url('<%= asset_path 'home/queen.jpg' %>')"></div>
+    <div class="mobile" style="top: 50%; background-image: url('<%= asset_path 'home/freddie.jpg' %>')"></div>
+  </div>
+  <div class="logo">ALLIES</div>
+  <a href="#contact" class="arrow"><%= image_tag("arrows/ArrowDown.png") %></a>
+  <%= render 'layouts/nav' %>
+</div>
+<div class="about">
+    <div class="copy">
+      <span>We’re an independent studio of designers and developers based in Atlanta, GA
+      collaborating with brands, agencies, and startups to create experiences and products.
+      Our focus is user experience design, product design, and development.</span>
+      <br />
+      <a href="/projects" class="block">See our work</a>
+    </div>
+</div>
+<div class="person">
+  <%= image_tag("home/graeme.jpg") %>
+  <span class="name">Graeme Nelson</span>
+  <span class="role">Design</span>
+</div>
+<div class="person">
+  <%= image_tag("home/keith.jpg") %>
+  <span class="name">Keith Weaver</span>
+  <span class="role">Design</span>
+</div>
+<div class="person">
+  <%= image_tag("home/chris.jpg") %>
+  <span class="name">Chris Barnes</span>
+  <span class="role">Code</span>
+</div>
+<div style="clear: both"></div>
+<!--<div id="map"><div></div></div>-->
+<div class="contact-home" id="contact">
+  <div class="wrapper">
+    <div class="hire">
+      The Allies Are Available For:
+    </div>
+    <div class="experience">
+      Projects, Freelance, Consulting, Pitches, Beer
+    </div>
+    <a href="/contact" class="block">Contact Us</a>
+    <div class="address">
+      659 Auburn Avenue NE #118, Atlanta Georgia 30312
+    </div>
+    <a href="https://twitter.com/MADEBYALLIES" target="_blank"><%= image_tag("TwitterIconWhite.png", :class => 'twitter') %></a>
+  </div>
+  <a href="#top" class="arrow"><%= image_tag("arrows/ArrowUp.png") %></a>
+</div>

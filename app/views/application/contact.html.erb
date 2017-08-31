@@ -1,0 +1,10 @@
+<a href="/" class="contact-nav">
+  <%= image_tag("nav/contact-x.png")%>
+</a>
+<!--<a href="" class="contact-send"><span>Send</span></a>-->
+<form id="contact-form" method="post" action="">
+  <input onfocus="validate('name')" onblur="validate('name')" type="text" name="name" class="name" value="name" /><br />
+  <input onfocus="validateEmail()" onblur="validateEmail()" type="text" name="email" class="email" value="email" /><br />
+  <textarea onfocus="validate('message')" onblur="validate('message')" name="message">message</textarea>
+  <input type="submit" class="contact-send" value="send" />
+</form>

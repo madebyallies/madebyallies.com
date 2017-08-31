@@ -1,0 +1,94 @@
+.nav {
+  position: absolute;
+  opacity: 0;
+  right: 0px;
+  z-index: 100;
+  top: 0px;
+  background-color: rgba(0,0,0,0.9);
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+
+  ul {
+    list-style-type: none;
+    left: 75px;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    position: absolute;
+
+    a {
+      font-family: "Gotham";
+      font-size: 40px;
+      color: white;
+      text-transform: uppercase;
+      line-height: 2.0em;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: #BF321E;
+      }
+    }
+  }
+}
+
+.nav-icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  background-image: url('nav/NavBackgroundWhite.png');
+  z-index: 101;
+  cursor: pointer;
+  -webkit-user-select: none;
+
+  &:hover > .image {
+    background-image: url('nav/NavHover.png');
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    background-size: 100%;
+    background-image: url('nav/WhiteIcon.png');
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    ul {
+      text-align: right;
+      right: 20px;
+      top: 50%;
+
+      a {
+        font-size: 30px;
+        line-height: 2.0em;
+      }
+    }
+  }
+
+  .nav-icon {
+    width: 60px;
+    height: 60px;
+
+    &:hover > .image {
+      background-image: url('nav/WhiteIcon.png');
+    }
+
+    .image {
+      width: 30px;
+      height: 30px;
+      margin: 15px;
+    }
+  }
+}

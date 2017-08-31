@@ -1,0 +1,72 @@
+<div class="intro" id="top" style="background-image: url(<%= asset_path 'dominants/projects.jpg' %>)">
+  <div class="logo">Projects</div>
+  <div class="title">Select client work and products we've welded on the internet.</div>
+  <a href="#contact" class="arrow"><%= image_tag("arrows/ArrowDown.png") %></a>
+  <%= render 'layouts/nav' %>
+</div>
+<div class="projects">
+
+  <a href="/storybook">
+    <div class="project" style="background-color: #FFD12E">
+      <%= image_tag("projects/storybook.png")%>
+      <div>
+        <span>Storybook</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/lvlcam">
+    <div class="project" style="background-color: #B6B6B6">
+      <%= image_tag("projects/lvlcam.png")%>
+      <div>
+        <span>LVL Cam</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/scraffle">
+    <div class="project" style="background-color: #1FA765">
+      <%= image_tag("projects/scraffle.png")%>
+      <div>
+        <span>Scraffle</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="/tnt">
+     <div class="project" style="background-color: #325B8F">
+       <%= image_tag("projects/tnt.png")%>
+       <div>
+          <span>TNT</span>
+        </div>
+     </div>
+  </a>
+
+  <a href="/daniel">
+    <div class="project" style="background-color: #F25A3C">
+        <%= image_tag("projects/daniel.png")%>
+        <div>
+            <span>Daniel</span>
+        </div>
+    </div>
+  </a>
+
+  <a href="/kanga">
+    <div class="project" style="background-color: #00BCB8">
+        <%= image_tag("projects/kanga.png")%>
+        <div>
+            <span>Kanga</span>
+        </div>
+    </div>
+  </a>
+
+  <div style="clear: both;"></div>
+
+</div>
+
+<div id="contact" class="contact contact-projects">
+  <div class="tag">We are very <span>#blessed</span><br />
+    by the internet &amp; you</div>
+  <a href="/contact" class="block" style="font-size: 18px;">Contact Us</a>
+  <a href="#top" class="arrow"><%= image_tag("arrows/ArrowUpBlack.png") %></a>
+</div>

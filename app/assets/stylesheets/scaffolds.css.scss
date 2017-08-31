@@ -1,0 +1,168 @@
+.block {
+  font-size: 18px;
+  font-family: 'Gotham';
+  width: 350px;
+  padding: 43.5px 0;
+  border: solid white 1px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #666;
+    border-color: #666;
+  }
+}
+
+.intro {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-image: url('dominants/projects.jpg');
+  background-size: cover;
+
+  .logo {
+    padding: 30px 0;
+    width: 350px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Gotham';
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    font-size: 50px;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .title {
+    margin-top: 100px;
+    top: 50%;
+    font-family: 'Grotesk';
+    font-size: 20px;
+    color: white;
+    left: 80px;
+    position: absolute;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+  }
+}
+
+.contact {
+  height: 1060px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+
+  .tag {
+    font-family: 'Gotham';
+    font-size: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    margin-top: -90px;
+    width: 100%;
+  }
+
+  .arrow {
+    bottom: 20px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+  }
+
+  .block {
+    position: absolute;
+    top: 50%;
+    width: 460px;
+    border-width: 1px;
+    font-size: 30px;
+    padding: 45px 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    margin-top: 120px;
+  }
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img{
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .block {
+    width: 80%;
+    padding: 40px 0;
+  }
+
+  .intro {
+    height: calc(100vh - 68px);
+    padding-top: 0;
+
+    .logo {
+      padding: 15px 20px;
+      width: auto;
+      background-color: white;
+      font-family: "Gotham";
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      font-size: 30px;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .title {
+      margin-top: 45px;
+      top: 50%;
+      font-family: 'Grotesk';
+      font-size: 16px;
+      color: white;
+      left: 20px;
+      position: absolute;
+      line-height: 1.2em;
+      padding-right: 20px;
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+  }
+
+  .contact {
+    height: 100vh;
+    padding-top: 0;
+
+    .tag {
+      font-size: 20pt;
+    }
+
+    .block {
+      margin-top: 45px;
+      width: 80%;
+      padding: 40px 0;
+    }
+  }
+}
